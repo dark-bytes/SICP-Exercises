@@ -1,0 +1,20 @@
+#lang scheme
+
+;pascal triangles
+;tell us the row and column of triangle
+
+(define (fact n)(
+                  if ( = n 1)
+                       1
+                       ( * n (fact (- n 1)))))
+                     
+
+
+
+(define ( pasc  n r)(
+      / (fact n) (* (fact r) (fact (- n r)))     
+  )
+)
+
+
+(pasc 4 3)
