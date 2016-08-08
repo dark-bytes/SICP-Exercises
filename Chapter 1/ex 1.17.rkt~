@@ -1,0 +1,12 @@
+#lang scheme
+
+(define (multi a b)
+  (
+   if (or (= b 0) (= b 1))
+      0
+      (if (even? b) ( + (* 2 a) (multi a (/ b 2)))
+          (+ a (multi a (- b 1)))
+   ))
+  )
+
+(multi 2 4)
