@@ -1,0 +1,6 @@
+#lang scheme
+
+(define (fast-exp b inc n)
+  if( = (n)
+
+  )
