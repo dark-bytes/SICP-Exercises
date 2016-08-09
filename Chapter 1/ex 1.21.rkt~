@@ -1,0 +1,12 @@
+#lang scheme
+
+(define smallest-divisor n start
+  ( cond ((> (square start) n) n)
+         ((divide? start n) start)
+         (else (find-divisor n (+ start 1))))
+   )
+
+(define (divides? a b)
+  (= (remainder b a) 0 ))
+
+( smallest-divisor 199 1)

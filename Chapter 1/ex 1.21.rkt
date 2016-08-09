@@ -9,6 +9,6 @@
 (define (divide? a b)
   (= (remainder b a) 0 ))
 
-( smallest-divisor 199 2)
+(smallest-divisor 4 2)
 (smallest-divisor 1999 2)
 (smallest-divisor 19999 2)
