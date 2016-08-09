@@ -9,7 +9,7 @@
   (if ( > a b)
       1
       (* ( term a)
-         (product value (next a) next b))))
+         (product term (next a) next b))))
 
 (define (inc n) (+ n 1))
 (define (product-range a b)
