@@ -30,7 +30,7 @@
 ;finding pie/4 approx
 
 (define ( pie a)
-  ( / (product typ-multiply 2.0 next1 (+ 1 (* a 2)) ) (product square 3 inc (+ 1 (* n 2)) )  
+  ( / (product typ-multiply 2.0 next1 (+ 1 (* a 2)) ) (product square 3 inc (+ 1 (* a 2)) )  
 ))
 
 (pie 4)
