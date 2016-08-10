@@ -17,7 +17,7 @@
 )
 
 (define (tan-cf x k)
-  (/ x cont-frac x 1.0 k)
+  (/ x (cont-frac x 1.0 k))
 )
 
 (tan-cf 1.0 5)
