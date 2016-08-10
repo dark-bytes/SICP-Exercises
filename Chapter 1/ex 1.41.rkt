@@ -2,7 +2,7 @@
 
 (define (inc a) ( + a 1))
 
-(define (double f var)
+(define (double f)
   (lambda (var) ( f ( f var )  ) )
  )
 
