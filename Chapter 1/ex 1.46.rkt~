@@ -1,0 +1,17 @@
+#lang scheme
+
+(define dx 0.001)
+(define ( cube x) (* x x x)) 
+(define (avg a b c) ( / ( + a b c) 3))
+
+(define (repeated f n) 
+    (if ( < n 1)
+        (lambda (x) x)
+        (compose f(repeated f (- n 1)))
+ ))
+
+(define (smoothing f)
+  ( avg ( cube (- x dx)) (cube x) (cube (+ x dx)))
+)
+
+((repeated smoothing cube) 5)

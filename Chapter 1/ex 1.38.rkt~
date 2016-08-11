@@ -1,0 +1,19 @@
+#lang scheme
+
+(define tolerance 0.00001)
+(define sum 2)
+(define (inc x) (+ x 1))
+(define (next d k)
+  (if ((and (= (remainder? k 2) 0) (= (remainder? sum 2) 0)))
+      (sum ) ()
+      )
+)
+
+
+(define (cont-frac n d k)
+  ( cond (( = k 0) 0)
+    ( else (/ n (+ d (cont-frac n (next d (- k 1)) (- k 1))) ) 
+   ))
+)
+
+(cont-frac 1.0 1.0 11)
