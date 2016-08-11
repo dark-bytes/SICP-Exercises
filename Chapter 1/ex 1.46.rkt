@@ -11,7 +11,6 @@
         guess
         ((iterative-improve good-enough? improve) (improve guess)))))
 
-
 (define (sqrt-iterative x)
       ((iterative-improve (lambda (guess)
                         (< (abs (- (square guess) x)) 0.001))
