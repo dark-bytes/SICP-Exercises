@@ -32,12 +32,12 @@
 
 (define (width rect)
   
-  (sqrt (+ (square (- (xpoint p1) (xpoint p2))) (square (- (ypoint p1) (ypoint p2)))))
+  (sqrt (+ (square (- (x-point p1) (x-point p2))) (square (- (y-point p1) (y-point p2)))))
 )
 
 
 (define (height rect)
-  (sqrt (+ (square (- (xpoint p1) (xpoint p3))) (square (- (ypoint p1) (ypoint p3)))))
+  (sqrt (+ (square (- (x-point p1) (x-point p3))) (square (- (y-point p1) (y-point p3)))))
 )
 
 
@@ -45,11 +45,11 @@
   (*(width rect) (height rect)))
 
 (define (perimeter-rect rect)
-  (* (+ (width-rect rect)(height-rect rect)) 2)
+  (* (+ (width rect)(height rect)) 2)
   )
 
 (define (make-rectangle uline1 bline1)
-  (con uline1 bline1)
+  (cons uline1 bline1)
 ) 
 
 
@@ -59,5 +59,7 @@
 (define p4 (make-point 4 6))
 (define uline1 (make-segment p1 p2))
 (define bline1 (make-segment p3 p4))
-(define rect (make-rectagle uline1 bline1))
+(define rect (make-rectangle uline1 bline1))
+(area-rect rect)
+(perimeter-rect rect)
 (mid-point p1 p2)
