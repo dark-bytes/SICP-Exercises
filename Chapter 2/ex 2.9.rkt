@@ -13,7 +13,7 @@
  )
 
 (define ( width i )
-  (- (upper-bound i) (lower-bound i))
+  (/ (- (upper-bound i) (lower-bound i)) 2)
  )
 
 (define (sub-interval i1 i2)
