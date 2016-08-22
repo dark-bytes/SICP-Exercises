@@ -12,4 +12,4 @@
   (lambda (f)
     (lambda (x)
       ((a f) ((b f) x)))))
-(add 1 2)
+(add 1 8)
