@@ -30,3 +30,9 @@
 )
 
 ( transpose s)
+
+(define (matrix-*-matrix m n)
+  (let ((cols (transpose n)))
+    (map (lambda(x) (matrix-*-vector cols x)) m)))
+
+(matrix-*-matrix s s)
