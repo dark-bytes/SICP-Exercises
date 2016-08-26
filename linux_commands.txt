@@ -1,0 +1,13 @@
+
+Terms
+vim normal mode - it is mode where you scroll vim editor
+vim command mode - it is a place where you commands
+CLI - command line interface 
+shell - where we write commands to command computer
+Profile - it loaded first when bash starts
+File - stores data
+File descriptor - stores information about file
+Process - is a program executed in memory, any program executed creates process
+Program - set of instruction to be performed
+Environment - it is something where environment variable are defined
+Environment variables -  
